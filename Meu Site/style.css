@@ -1,0 +1,92 @@
+
+
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Compensa a altura do cabeçalho */
+}
+
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    padding: 10px 0; /* Espaçamento interno do cabeçalho */
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0; /* Posição do cabeçalho no topo */
+    left: 0; /* Alinha o cabeçalho ao lado esquerdo */
+    width: 100%; /* Largura total da página */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Espaça o logo e a navegação */
+    align-items: center; /* Alinha verticalmente o conteúdo do cabeçalho */
+    max-width: 1200px; /* Largura máxima do cabeçalho */
+    margin: 0 auto; /* Centraliza o cabeçalho horizontalmente */
+    padding: 0 20px; /* Espaçamento lateral */
+}
+
+.logo {
+    margin: 0; /* Remove margens padrão do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+}
+
+.nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os itens da navegação em linha */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.nav a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 18px; /* Tamanho da fonte dos links */
+}
+
+.nav a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+
+.body {
+    display: flex;
+    justify-content: center; /* Centraliza o contêiner horizontalmente */
+    align-items: center;     /* Centraliza o contêiner verticalmente */
+    height: 150vh;          /* Faz com que o body ocupe a altura total da viewport */
+    margin: 0;               /* Remove margens padrão do body */
+    background-color: #F2EDD5; /* Cor de fundo para contraste */
+}
+
+.link {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit;        /* Mantém a cor do texto igual ao restante do design */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;  /* Alinha os itens em coluna (texto em cima e imagem embaixo) */
+    align-items: center;     /* Centraliza os itens horizontalmente */
+    text-align: center;      /* Centraliza o texto dentro do contêiner */
+    gap: 10px;               /* Espaçamento entre o texto e a imagem */
+    background: white;       /* Fundo branco para o contêiner */
+    padding: 20px;           /* Espaçamento interno do contêiner */
+    border-radius: 8px;      /* Bordas arredondadas para o contêiner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para o contêiner */
+}
+
+.texto {
+    font-size: 18px; /* Tamanho do texto */
+}
+
+.imagem {
+    width: 300px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
